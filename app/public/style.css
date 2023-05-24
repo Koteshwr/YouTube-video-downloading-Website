@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.logo img {
+  width: 150px;
+}
+.logo h1 {
+  position: relative;
+  top: -20px;
+  left: 20px;
+  letter-spacing: 1px;
+  display: inline-block;
+  color: #970000;
+  font-family: "Lucida Sans", "Lucida Sans Regular";
+  animation: blink 2s infinite;
+  text-shadow: 0 0 20px #ff0000, 0 0 5px #ff0000, 0 0 100px #ff0000,
+    0 0 40px #ff0000, 0 0 70px #ff0000, 0 0 100px #ff0000, 0 0 150px #ff0000,
+    0 0 200px #ff0000;
+}
+.heading {
+    
+  text-align: center;
+    margin-top: 5vh;
+    letter-spacing: 1px;
+  display: inline-block;
+  font-size: 40px;
+  color: rgb(194, 4, 4);
+  text-shadow: 0 0 10px red,0 0 2px red,0 0 50px red;
+
+  font-family: "Lucida Sans", "Lucida Sans Regular";
+}
+
+.mainbd {
+    display: flex;
+    flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("images/bgpic3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 65vh;
+  width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#link{
+    text-decoration: none;
+    border: 1px #970000 solid;
+    font-size: 20px;
+    padding: 10px;
+    width: 60vw;
+    background: transparent;
+    margin-top:6vh;
+    box-shadow:  0 0 10px red,0 0 2px red,0 0 50px red,0 0 2px red,0 0 20px red;
+    border-radius: 5px;
+    color: white;
+}
+
+#submit{
+    background-color: transparent;
+    font-size: 20px;    
+    box-shadow:  0 0 10px red,0 0 2px red,0 0 50px red,0 0 2px red,0 0 20px red;
+    border-radius: 5px;
+    padding: 10px;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  5% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.footer{
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: black;
+    color: rgb(150, 150, 150);
+}
+.footer h5{
+    padding: 5px;
+}
+
+#linktocode a{
+  
+    text-decoration: none;
+    color: rgb(150, 150, 150);;
+}
+#linktocode a:hover{
+    color: white;
+}
+#linktocode span{
+    padding: 0px 3px;
+}
+.utubebtn a{
+    text-decoration: none;
+    color: red;
+}
+.utubebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:400px) {
+  .banner {
+    overflow: hidden;
+    display: flex;
+  
+    flex-direction: column;
+    height: 20vh;
+
+  }
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+    .logo img {
+      margin-top: 20px;
+      width: 100px;
+    }
+    .logo h1 {
+      font-size: 25px;
+      padding: 5px 50px;
+      display: block;
+      position:static;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+    .heading {
+      margin-top: 5vh;
+      padding: 10px;
+      font-size: 26px;  
+    }
+    #link{
+      font-size: 15px;
+      width: 65vw;
+      margin-top:5vh;
+  }
+  #submit{
+    font-size: 18px;    
+    padding: 5px;
+}
+.mainbd{
+  height: 60vh;
+}
+.footer{
+  text-align: center;
+  padding: 5px;
+  height: 20vh;
+  font-size: 13px;
+}
+  }

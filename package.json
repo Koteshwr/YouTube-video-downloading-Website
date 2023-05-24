@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "youtube-dl-exec": "^2.4.2",
+    "yt-dlp-wrap": "^2.3.11"
+  }
+}
